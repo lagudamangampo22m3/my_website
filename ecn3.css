@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+	background-image: url(C:/Users/Admin/OneDrive/Pictures/barbershop.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    backdrop-filter:blur(5px);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-y: auto;
+    
+}
+main {
+    margin-top: 100px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+}
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 10px;
+    height: 120px;
+
+}
+
+.logo img {
+    height: 100%; 
+    width: auto; 
+    max-width: 100%;   
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.logo img:hover{
+    transform: none;
+}
+
+.nav{
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    z-index: 100;
+}
+
+.nav-menu ul{
+    display: flex;
+    margin-left: 800px;
+}
+
+.nav-menu ul li{
+    list-style-type: none;
+
+}
+
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color:#fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+
+.link:hover, .active{
+    border-bottom: 2px solid #fff;
+}
+
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255,  0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+
+}
+
+.btn:hover{
+    background: rgba(255, 255, 255,  0.3);
+}
+#registerBtn{
+    margin-left: 15px;
+}
+.btn.white-btn{
+    background: rgba(255, 255, 255,  0.7);
+}
+.btn.btn.white-btn:hover{
+    background: rgba(255, 255, 255,  0.5);
+}
+.nav-menu-btn {
+    display: none;
+}
+
+.wrap, .wrap-1, .wrap-2 {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.wrap li, .wrap-1 li, .wrap-2 li {
+    display: inline-block;
+}
+
+.wrap img, .wrap-1 img, .wrap-2 img {
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+}
+img {
+    margin-left:50px;
+    border-radius: 10%; 
+    object-fit: cover;
+    border: 5px solid #543310;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s;
+    width: 300px;
+    height: 300px;
+    align-items:center
+    }
+    
+img:hover {
+    transform: scale(1.20);
+    filter: grayscale(10%);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    flex-direction: row;
+    gap: 100px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social-icons li {
+    list-style-type: none;
+}
+
+footer .social-icons li a {
+    font-size: 1em;
+    color: #fff;
+    margin: 0px 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social-icons li a:hover{
+    transform: translateY(-10px);
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    opacity: 0.75;
+}
