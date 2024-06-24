@@ -185,4 +185,61 @@ footer p{
     opacity: 0.75;
 }
 
+@media only screen and (max-width: 768px) {
+    .logo {
+        left: 10px;
+        top: 10px;
+        margin-left: 20px;
+        margin-top: 5px;
+        height: 80px;
+    }
+
+    .nav {
+        height: 70px;
+        line-height: 70px;
+        padding: 0 10px;
+    }
+
+    .nav-logo p {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .nav-menu ul li .link {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .input-field {
+        width: 100%;
+    }
+
+    textarea.input-field {
+        width: 100%;
+    }
+
+    .submit {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 50px;
+        height: auto;
+        padding: 20px;
+    }
+
+    footer .social-icons li a {
+        font-size: 1.5em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
 
